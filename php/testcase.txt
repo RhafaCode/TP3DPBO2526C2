@@ -1,0 +1,10 @@
+id_media=F006
+judul=Interstellar
+durasi_menit=169
+genre=Sci-Fi
+sutradara=Christopher Nolan
+tahun_rilis=2014
+harga_tiket=50000
+studio=Studio 6
+rating_usia=13+
+foto_produk=poster-interstellar.jpg
