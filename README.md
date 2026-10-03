@@ -46,4 +46,4 @@ javac -d java/Program/build java/Program/*.java && java -cp java/Program/build P
 ```
 
 ## Dokumentasi
-Folder `cpp/Dokumentasi`, `python/Dokumentasi`, dan `java/Dokumentasi` disediakan untuk screenshot hasil program masing-masing. Screenshot TP3 belum tersedia; gambar di folder `Dokumentasi` tingkat utama merupakan arsip dari tugas sebelumnya dan bukan bukti program TP3.
+Folder `cpp/Dokumentasi`, `python/Dokumentasi`, dan `java/Dokumentasi` disediakan untuk screenshot hasil program masing-masing.
