@@ -34,7 +34,7 @@ python/Program/        person.py, dokter.py, pasien.py, klinik.py, main.py
 python/Dokumentasi/    dokumentasi screenshot Python TP3
 java/Program/          Person.java, Dokter.java, Pasien.java, Klinik.java, Main.java
 java/Dokumentasi/      dokumentasi screenshot Java TP3 (bonus)
-Dokumentasi/           arsip screenshot tugas praktikum sebelumnya
+Dokumentasi/           design erd
 README.md
 ```
 
