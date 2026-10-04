@@ -7,6 +7,7 @@
 #include "Dokter.h"
 #include "Pasien.h"
 
+// Klinik menyimpan koleksi dokter dan pasien serta menampilkan datanya.
 class Klinik {
 private:
     std::string namaKlinik;
@@ -16,12 +17,15 @@ private:
 public:
     explicit Klinik(const std::string& namaKlinik) : namaKlinik(namaKlinik) {}
 
+    // Tambahkan objek baru ke daftar yang sesuai.
     void tambahDokter(const Dokter& dokter) { daftarDokter.push_back(dokter); }
     void tambahPasien(const Pasien& pasien) { daftarPasien.push_back(pasien); }
 
+    // Tampilkan identitas umum dan data khusus setiap dokter dan pasien.
     void tampilkanSemuaData() const {
         std::cout << "\n=== " << namaKlinik << " ===\n";
         std::cout << "Daftar Dokter (" << daftarDokter.size() << ")\n";
+        // Nomor tampilan dimulai dari satu agar mudah dibaca.
         for (std::size_t i = 0; i < daftarDokter.size(); ++i) {
             const Dokter& dokter = daftarDokter[i];
             std::cout << i + 1 << ". Nama: " << dokter.getNama()

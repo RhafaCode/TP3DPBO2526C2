@@ -4,6 +4,7 @@ from pasien import Pasien
 
 
 def main():
+    # Buat klinik dan isi data awal untuk dokter serta pasien.
     klinik = Klinik("Klinik Sehat Sentosa")
 
     klinik.tambah_dokter(Dokter("dr. Nadia Putri", 38, "Perempuan", "Umum", "08.00-12.00"))
@@ -11,9 +12,11 @@ def main():
     klinik.tambah_pasien(Pasien("Rani", 24, "Perempuan", "Demam dan batuk", "RM-2026-001"))
     klinik.tambah_pasien(Pasien("Dito", 9, "Laki-laki", "Pemeriksaan rutin", "RM-2026-002"))
 
+    # Tampilkan kondisi awal sebelum data baru dimasukkan.
     print("DATA SEBELUM PENAMBAHAN")
     klinik.tampilkan_semua_data()
 
+    # Tambahkan satu dokter dan satu pasien untuk menunjukkan perubahan data.
     klinik.tambah_dokter(Dokter("dr. Siti Rahma", 35, "Perempuan", "Gigi", "09.00-14.00"))
     klinik.tambah_pasien(Pasien("Fajar", 31, "Laki-laki", "Sakit gigi", "RM-2026-003"))
 

@@ -3,6 +3,7 @@ package Program;
 import java.util.ArrayList;
 import java.util.List;
 
+// Klinik mengelola daftar dokter dan pasien serta menampilkan datanya.
 public class Klinik {
     private final String namaKlinik;
     private final List<Dokter> daftarDokter = new ArrayList<>();
@@ -12,6 +13,7 @@ public class Klinik {
         this.namaKlinik = namaKlinik;
     }
 
+    // Tambahkan objek ke daftar sesuai jenisnya.
     public void tambahDokter(Dokter dokter) {
         daftarDokter.add(dokter);
     }
@@ -20,9 +22,11 @@ public class Klinik {
         daftarPasien.add(pasien);
     }
 
+    // Cetak data identitas umum dan informasi khusus tiap objek.
     public void tampilkanSemuaData() {
         System.out.println("\n=== " + namaKlinik + " ===");
         System.out.println("Daftar Dokter (" + daftarDokter.size() + ")");
+        // Indeks daftar diubah menjadi nomor tampilan yang dimulai dari satu.
         for (int i = 0; i < daftarDokter.size(); i++) {
             Dokter dokter = daftarDokter.get(i);
             System.out.printf("%d. Nama: %s | Usia: %d | Gender: %s | Spesialis: %s | Jam praktik: %s%n",
